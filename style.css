@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+    --green-darkest: #2D8A44;
+    --green-dark: #40B25C;
+    --green-medium: #53CC71;
+    --lightest: #E1E7FA;
+
+    --orange-darkest: #80351D;
+    --orange-medium: #E36305;
+    --orange-light: #FF8861;
+    --orange-lightest: #FFA688;
+
+    --alert-default: #E63737;
+    --alert-light: #F6CBCB;
+    --warning-default: #FFEA7D;
+    --warning-light: #FFFFD8;
+    --success-default: #008F00;
+    --success-light: #DAF4CD;
+
+    --neutral-darkest: #030303;
+    --neutral-dark: #40464D;
+    --neutral-medium: #9FA3A6;
+    --neutral-light: #CFD1D2;
+    --neutral-lightest: #E9E9E9;
+    --neutral-white: #FFFFFF;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Inter";
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.c-container {
+    width: 1376px;
+    margin: auto;
+}
+
+/* Inicio Estilização Header */
+
+.c-header {
+    height: 120px;
+}
+
+.c-menu__container {
+    display: flex;
+    justify-content: space-between;
+    
+    height: 72px;
+    align-items: center;
+}
+
+.c-menu__logo {
+    margin-right: 20px;
+}
+
+.c-menu__input{
+    width: 882px;
+    height: 48px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    padding-left: 20px;
+}
+
+.c-menu__button {
+    border: none;
+    background: none;
+    position: relative;
+    left: -65px;
+    cursor: pointer;
+}
+
+.c-menu__item {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 310px;
+    position: relative;
+    left: -45px;
+
+}
+
+.c-menu__link-number {
+    position: relative;
+    bottom: 15px;
+    right: 15px;
+}
+
+
+
+.c-nav {
+    height: 48px;
+    background: var(--neutral-darkest);
+    display: grid;
+    position: relative;
+    right: 35px;
+}
+
+.c-nav__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+.c-nav__link {
+    color:var(--neutral-white);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+}
