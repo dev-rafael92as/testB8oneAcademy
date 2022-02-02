@@ -23,7 +23,7 @@
                         <a href="#"><img src="./assets/header/buttomWishlist-header.png" alt="Lista de Desejos"></a>
                     </li>
                     <li>    
-                        <a href="#"><img src="./assets/header/ShoppingCart.png" alt="Carrinho"></a>
+                        <a class="c-menu-cart" href="#"><img src="./assets/header/ShoppingCart.png" alt="Carrinho"><p class="c-menu--counter">1</p></a>
                         <img class="c-menu__link-number" src="./assets/header/numberShoppingCart-header.png" alt="Numero de Itens no Carrinho">
                     </li>
                 </ul>
@@ -59,54 +59,63 @@
         </header>
         <main>
             <section>
-                <div>
-                    <span>Home</span>
+                <div class="c-bread__container">
+                    <a class="c-bread__link" href="#">Home</a>
                         <img src="./assets/section1/iconBreadCrumb.svg" alt="Icone Seta">
-                    <span>Eletronics</span>
+                    <a class="c-bread__link" href="#">Eletronics</a>
                         <img src="./assets/section1/iconBreadCrumb.svg" alt="Icone Seta">
-                    <span>Computers</span>
+                    <a class="c-bread__link u-bread--orange" href="#">Computers</a>
                 </div>
-                <div>
-                    <img src="./assets/section1/imgProduct-Section.png" alt="Imagem Produto">
-                    <p>Roll over image to zoom in</p>
-                </div>
-                <Form>
-                    <div>
-                        <h6>Apple</h6>
-                        <h2>Apple 13.3" MacBook Pro, 2.6GHz Intel Core i7 6 Core 9th Gen (Late 2019, Space Gray)</h2>
-                        <p>Ref: 000000</p><span>read full description</span>
-                    </div>
-                    <div>
-                        <label><strong>Color:</strong> Space Gray</label>
-                            <input type="radio" name="Color" id="">
-                            <input type="radio" name="Color" id="">
-                            <input type="radio" name="Color" id="">
-
-                        <label><strong>Screen Size:</strong></label>
-                            <a><input type="radio" name="TamanhoTela" id="">13.3"</a>
-                            <input type="radio" name="TamanhoTela" id="">
-                            <input type="radio" name="TamanhoTela" id="" disabled>
-
+                <div class="c-card__container">
+                    <div class="c-product__img">
+                        <img src="./assets/section1/imgProduct-Section.png" alt="Imagem Produto">
+                        <p>Roll over image to zoom in</p>
+                    </div> 
+                    <Form class="c-form__container">
                         <div>
-                            <img src="./assets/section1/imgDelivery-section.svg" alt="Icone Delivery">
-                            <h6>Shipping</h6>
-                            <p>Receive or pickup your products!</p>
-                            <p>See shipping options</p>
+                            <p class="c-card__subtitle">Apple</p>
+                            <h3 class="c-card__title">Apple 13.3" MacBook Pro, 2.6GHz Intel Core i7 6 Core 9th Gen (Late 2019, Space Gray)</h3>
+                            <div class="c-card__content">
+                                <p class="c-card__ref">Ref: 000000</p><a class="c-card__cta">read full description</a></span>
+                            </div>    
+                        </div>
+                        <div class="c-card__especify-container">
+                            <div class="c-card__subcontainer">
+                            <div>
+                            <label class="c-color__title"><strong>Color:</strong> Space Gray</label>
+                                <button class="c-color__item" name="Color1" id="color1"><img src="./assets/section1/colorProduct1-section.png"></button>
+                                <button class="c-color__item" name="Color2" id="color2"><img src="./assets/section1/colorProduct2-section.png"></button>
+                                <button class="c-color__item" name="Color3" id="color3"><img src="./assets/section1/colorProduct3-section.png"></button>
+                            </div>
+                            <div>
+                            <label class="c-size__title"><strong>Screen Size:</strong></label>
+                                <button class="c-size__item" name="TamanhoTela1" id="sizeScreen1">13.3"</button>
+                                <button class="c-size__item" name="TamanhoTela2" id="sizeScreen2">18"</button>
+                                <button class="c-size__item" name="TamanhoTela3" id="sizeScreen3" disabled>21"</button>
+                            </div>
+                            <div class="c-shipping__container">
+                                <img src="./assets/section1/imgDelivery-section.svg" alt="Icone Delivery">
+                                <p class="c-shipping__tittle">Shipping</p>
+                                <p class="c-shipping__text">Receive or pickup your products!</p>
+                                <a class="c-shipping__cta">See shipping options</a>
+                            </div>
+                            </div>
+                        
+                        <div class="c-card-payment">
+                            <h2 class="c-payment__value">$ 3,199.00</h2>
+                            <p class="c-payment__discount">$ 3,600.00</p> <span class="c-payment__cta">SAVE $ 0</span>
+                            <div class="c-cart__container">
+                                <input class="c-cart__amount" type="number" name="numberOfProduct" value="2" id="">
+                                <p class="c-cart__stock u-stock--red">Only 3 left in Stock</p>
+                                <p class="c-cart__stock">Buy now!</p>
+                            </div>
+                            <button class="c-cart__add" type="submit">add to cart</button>
+                            <button class="c-cart__buy" type="submit">buy now</button>
+                            <p class="c-cart__shipped">Shipped by <strong>Store 1</strong> Sold by <strong>Store 2</strong></p>
                         </div>
                     </div>
-                    <div>
-                        <h2>$ 3,199.00</h2>
-                        <p>$ 3,600.00</p> <span>SAVE $ 0</span>
-                        <div>
-                            <input type="number" name="numberOfProduct" value="2" id="">
-                            <p>Only 3 left in Stock</p>
-                            <p>Buy now!</p>
-                        </div>
-                        <button type="submit">add to cart</button>
-                        <button type="submit">buy now</button>
-                        <p>Shipped by <strong>Store 1</strong> Sold by <strong>Store 2</strong></p>
-                    </div>
-                </Form>
+                    </Form>
+                </div>    
             </section>
             <section>
                 <h3>Customers also bought these products</h3><span>See all products</span>

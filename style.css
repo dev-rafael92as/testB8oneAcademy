@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 :root {
+    /*Padronização Cores*/
     --green-darkest: #2D8A44;
     --green-dark: #40B25C;
     --green-medium: #53CC71;
@@ -24,6 +25,23 @@
     --neutral-light: #CFD1D2;
     --neutral-lightest: #E9E9E9;
     --neutral-white: #FFFFFF;
+
+    /* Padronização Font & Typography*/
+    --body-font: 'Inter', sans-serif;
+    --h1-font-size: 32px;
+    --h2-font-size: 24px;
+    --h3-font-size: 20px;
+    --h4-font-size: 18px;
+    --large-paragraph: 16px;
+    --medium-paragraph: 14px;
+    --small-paragraph: 12px;
+    --placeholder: 16px;
+     
+    /* Padronização Font-Weight */
+    --font-semibold: 600;
+    --font-medium: 500;
+    --font-regular: 400;
+    --font-large: 700;
 }
 
 * {
@@ -64,8 +82,8 @@ a {
     width: 882px;
     height: 48px;
     border-radius: 4px;
-    font-size: 16px;
-    font-weight: 500;
+    font-size: var(--placeholder);
+    font-weight: var(--font-medium);
     line-height: 20px;
     padding-left: 20px;
 }
@@ -93,14 +111,33 @@ a {
     position: relative;
     bottom: 15px;
     right: 15px;
+    display: none;
 }
 
+.c-menu-cart {
+    display: grid;
+    position: relative;
+    top: 10px
+}
 
+.c-menu--counter {
+    position: relative;
+    bottom: 35px;
+    z-index: 1000;
+    left: 18px;
+    background: var(--orange-medium);
+    border-radius:50%;
+    Width: 20px;
+    text-align: center;
+    color: var(--neutral-white);
+    
+}
 
 .c-nav {
     height: 48px;
     background: var(--neutral-darkest);
     display: grid;
+    justify-content: stretch;
     position: relative;
     right: 35px;
 }
@@ -113,8 +150,93 @@ a {
 }
 
 .c-nav__link {
-    color:var(--neutral-white);
-    font-size: 14px;
-    font-weight: 500;
+    color: var(--neutral-white);
+    font-size: var(--medium-paragraph);
+    font-weight: var(--font-medium);
     line-height: 20px;
+}
+
+/* Inicio Estilização Section 1 */
+
+.c-bread__container {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.c-bread__link {
+    font-size: var(--small-paragraph);
+    font-weight: var(--font-medium);
+    color:var(--neutral-dark);
+}
+
+.u-bread--orange {
+    color: var(--orange-medium);
+}
+
+.c-card__container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.c-product__img {
+   margin-right: 100px;
+    text-align: center;
+}
+
+.c-form__container {
+    width: 680px;
+}
+
+/* Estilização Descrição Produto */
+
+.c-form__container {
+
+}
+
+.c-card__subtitle {
+    font-weight: var(--font-semibold);
+    color: var(--green-dark);
+    font-size: var(--small-paragraph);
+    margin-bottom: 8px;
+    margin-top: 24px;
+}
+
+.c-card__title {
+    font-weight: var(--font-semibold);
+    font-size:var(--h3-font-size);
+    color: var(--neutral-darkest);
+    line-height: 28px;
+    margin-bottom: 16px;
+}
+
+.c-card__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.c-card__ref {
+    font-size:var(--small-paragraph);
+    font-weight: var(--font-medium);
+    color:var(--neutral-dark);
+    line-height: 16px;
+}
+
+.c-card__cta {
+    text-transform: uppercase;
+    color:var(--green-dark);
+    font-weight: var(--font-large);
+    font-size:var(--small-paragraph);
+    line-height: 16px;
+}
+
+.c-card__especify-container {
+    display: flex;
+
+}
+
+.c-card__subcontainer {
+    display: flex;
+    flex-direction: column;
 }
