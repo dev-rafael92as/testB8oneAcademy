@@ -58,7 +58,7 @@
             </nav>
         </header>
         <main>
-            <section>
+            <section class="c-section__one">
                 <div class="c-bread__container">
                     <a class="c-bread__link" href="#">Home</a>
                         <img src="./assets/section1/iconBreadCrumb.svg" alt="Icone Seta">
@@ -81,259 +81,295 @@
                         </div>
                         <div class="c-card__especify-container">
                             <div class="c-card__subcontainer">
-                            <div>
-                            <label class="c-color__title"><strong>Color:</strong> Space Gray</label>
-                                <button class="c-color__item" name="Color1" id="color1"><img src="./assets/section1/colorProduct1-section.png"></button>
-                                <button class="c-color__item" name="Color2" id="color2"><img src="./assets/section1/colorProduct2-section.png"></button>
-                                <button class="c-color__item" name="Color3" id="color3"><img src="./assets/section1/colorProduct3-section.png"></button>
-                            </div>
-                            <div>
-                            <label class="c-size__title"><strong>Screen Size:</strong></label>
-                                <button class="c-size__item" name="TamanhoTela1" id="sizeScreen1">13.3"</button>
-                                <button class="c-size__item" name="TamanhoTela2" id="sizeScreen2">18"</button>
-                                <button class="c-size__item" name="TamanhoTela3" id="sizeScreen3" disabled>21"</button>
-                            </div>
-                            <div class="c-shipping__container">
-                                <img src="./assets/section1/imgDelivery-section.svg" alt="Icone Delivery">
-                                <p class="c-shipping__tittle">Shipping</p>
-                                <p class="c-shipping__text">Receive or pickup your products!</p>
-                                <a class="c-shipping__cta">See shipping options</a>
-                            </div>
+                                <p class="c-color__title"><strong>Color:</strong> Space Gray</p>
+                                <div class="c-color__container"></div>    
+                                    <button class="c-color__item" name="Color1" id="color1"><img src="./assets/section1/colorProduct1-section.png"></button>
+                                    <button class="c-color__item" name="Color2" id="color2"><img src="./assets/section1/colorProduct2-section.png"></button>
+                                    <button class="c-color__item" name="Color3" id="color3"><img src="./assets/section1/colorProduct3-section.png"></button>
+                                </div>
+                                <div>
+                                <p class="c-size__title"><strong>Screen Size:</strong></p>
+                                    <button class="c-size__item" name="TamanhoTela1" id="sizeScreen1"><strong>13.3"</strong></button>
+                                    <button class="c-size__item" name="TamanhoTela2" id="sizeScreen2"><strong>18"</strong></button>
+                                    <button class="c-size__item" name="TamanhoTela3" id="sizeScreen3" disabled><strong>21"</strong></button>
+                                </div>
+                                <div class="c-shipping__container">
+                                    
+                                    <img src="./assets/section1/imgDelivery-section.svg" alt="Icone Delivery">
+                                    <div>
+                                    <p class="c-shipping__tittle"><strong>Shipping</strong></p>
+                                    <p class="c-shipping__text">Receive or pickup your products!</p>
+                                    <a class="c-shipping__cta">See shipping options</a>
+                                    </div>
+                                </div>
                             </div>
                         
-                        <div class="c-card-payment">
+                        <div class="c-card__payment">
                             <h2 class="c-payment__value">$ 3,199.00</h2>
-                            <p class="c-payment__discount">$ 3,600.00</p> <span class="c-payment__cta">SAVE $ 0</span>
-                            <div class="c-cart__container">
-                                <input class="c-cart__amount" type="number" name="numberOfProduct" value="2" id="">
-                                <p class="c-cart__stock u-stock--red">Only 3 left in Stock</p>
-                                <p class="c-cart__stock">Buy now!</p>
+                            <div class="c-payment__container">
+                                <p class="c-payment__discount">$ 3,600.00</p> <span class="c-payment__cta">SAVE $ 0</span>
                             </div>
-                            <button class="c-cart__add" type="submit">add to cart</button>
-                            <button class="c-cart__buy" type="submit">buy now</button>
-                            <p class="c-cart__shipped">Shipped by <strong>Store 1</strong> Sold by <strong>Store 2</strong></p>
+                            <div class="c-cart__container">
+                                <div>
+                                    <input class="c-cart__amount" type="text" name="numberOfProduct" value="2" id="">
+                                    <button class="c-button__plus-count">
+                                        <img src="./assets/section1/imgDeductCounter.svg" alt="Botão reduzir Quantidade">
+                                    </button>
+                                    <button class="c-button__deduct-count">
+                                        <img src="./assets/section1/imgPlusCount.svg" alt="Botão aumentar Quantidade">
+                                    </button>
+                                </div>
+                                <div>
+                                    <p class="c-cart__stock u-stock--red">Only 3 left in Stock</p>
+                                    <p class="c-cart__stock">Buy now!</p>
+                                </div>
+                            </div>
+                            <div class="c-button__cart">
+                                <button class="c-cart__add c-cart--espc" type="submit">add to cart</button>
+                                <button class="c-cart__buy c-cart--espc" type="submit">buy now</button>
+                                <p class="c-cart__shipped">Shipped by <strong>Store 1</strong> Sold by <strong>Store 2</strong></p>
+                            </div>
                         </div>
                     </div>
                     </Form>
                 </div>    
             </section>
-            <section>
-                <h3>Customers also bought these products</h3><span>See all products</span>
-                <ul>
-                    <li>
-                        <div>
-                            <a><img src="./assets/section2e3/ImgProductCustomers1.png" alt="Imagem Vizio 65 polegadas"></a>
-                            <h5>VIZIO 65" Class 4K UHD Quantum SmartCast Sma...</h5>
-                            <p>$ 748.00</p>
-                            <h4>$ 548.00</h4>
-                            <p>10x $ 320,00</p>
+            <section class="c-section__two">
+                <a href="#">
+                    <img class="c-arrow__left" src="./assets/section1/left-default.png" alt="Trocar produtos a Esquerda">
+                </a>
+                <a href="#">
+                    <img class="c-arrow__right" src="./assets/section1/right-default.png" alt="Trocar produtos a Esquerda">
+                </a>
+                <div class="c-customers__flex">
+                    <h3 class="c-customers__title">Customers also bought these products</h3><a href="#" class="c-customers__cta">See all products</a>
+                </div>
+                <ul class="c-customers__item">
+                    <li class="c-customers--position">
+                        <div class="c-customers__link">
+                            <div class="c-product__cta">
+                                <span class="c-product__cta1">-0%</span>
+                                <span class="c-payment__cta">SAVE $ 0</span>
+                            </div>
+                                <a href="#"><img src="./assets/section2e3/ImgProductCustomers1.png" alt="Imagem Vizio 65 polegadas">
+                                <h5 class="c-product__title">VIZIO 65" Class 4K UHD Quantum SmartCast Sma...</h5>
+                                <p class="c-product__old-price">$ 748.00</p>
+                                <h3 class="c-product__price">$ 548.00</h3>
+                                <p class="c-product__payment">10x $ 320,00</p>
+                            </a>
                         </div>
                     </li>
                     <li>
-                        <div>
+                        <div class="c-customers__link">
                             <a><img src="./assets/section2e3/ImgProductCustomers2.png" alt="Imagem Apple Watch"></a>
-                            <h5>Apple Watch Series 5 GPS, 44mm Space Gray Alumi...</h5>
-                            <p></p>
-                            <h4>$ 449.00</h4>
-                            <p>10x $ 44,90</p>
+                            <h5 class="c-product__title">Apple Watch Series 5 GPS, 44mm Space Gray Alumi...</h5>
+                            <p class="c-product__old-price c-product--space"></p>
+                            <h3 class="c-product__price">$ 449.00</h3>
+                            <p class="c-product__payment">10x $ 44,90</p>
                         </div>
                     </li>
-                    <li>
-                        <div>
+                    <li class="c-customers--position">
+                        <div class="c-customers__link">
+                            <div class="c-product__cta">
+                                <span class="c-product__cta1">-0%</span>
+                                <span class="c-payment__cta">SAVE $ 0</span>
+                            </div>
                             <a><img src="./assets/section2e3/ImgProductCustomers3.png" alt="Imagem Pioneer"></a>
-                            <h5>The Pioneer Woman Cowboy Rustic 14-Piece...</h5>
-                            <p>$ 69.97</p>
-                            <h4>$ 59.00</h4>
-                            <p>10x $ 5,90</p>
+                            <h5 class="c-product__title">The Pioneer Woman Cowboy Rustic 14-Piece...</h5>
+                            <p class="c-product__old-price">$ 69.97</p>
+                            <h3 class="c-product__price">$ 59.00</h3>
+                            <p class="c-product__payment">10x $ 5,90</p>
                         </div>
                     </li>
                     <li>
-                        <div>
+                        <div class="c-customers__link">
                             <a><img src="./assets/section2e3/ImgProductCustomers4.png" alt="Imagem Wireless Pad"></a>
-                            <h5>onn. Wireless Charging Pad with LED Night Light</h5>
-                            <p></p>
-                            <h4>$ 12.88</h4>
-                            <p>10x $ 1,28</p>
+                            <h5 class="c-product__title">onn. Wireless Charging Pad with LED Night Light</h5>
+                            <p class="c-product__old-price c-product--space"></p>
+                            <h3 class="c-product__price">$ 12.88</h3>
+                            <p class="c-product__payment">10x $ 1,28</p>
                         </div>
                     </li>
                     <li>
-                        <div>
+                        <div class="c-customers__link">
                             <a><img src="./assets/section2e3/ImgProductCustomers5.png" alt="Imagem Office Chair"></a>
-                            <h5>Office Chair Ergonomic Desk Chair Mesh Comp...</h5>
-                            <p></p>
-                            <h4>$ 54.99</h4>
-                            <p>10x $ 320,00</p>
+                            <h5 class="c-product__title">Office Chair Ergonomic Desk Chair Mesh Comp...</h5>
+                            <p class="c-product__old-price c-product--space"></p>
+                            <h3 class="c-product__price">$ 54.99</h3>
+                            <p class="c-product__payment">10x $ 320,00</p>
                         </div>
                     </li>
                     <li>
-                        <div>
+                        <div class="c-customers__link">
                             <a><img src="./assets/section2e3/ImgProductCustomers6.png" alt="Imagem Office Chair"></a>
-                            <h5>Hershey, Halloween Assorted Candy Nuts...</h5>
-                            <p></p>
-                            <h4>$ 9.94</h4>
-                            <p>10x $ 320,00</p>
+                            <h5 class="c-product__title">Hershey, Halloween Assorted Candy Nuts...</h5>
+                            <p class="c-product__old-price c-product--space"></p>
+                            <h3 class="c-product__price">$ 9.94</h3>
+                            <p class="c-product__payment">10x $ 320,00</p>
                         </div>
                     </li>
                 </ul>
             </section>
-            <section>
-                <h3>Customers also viewed these products</h3><span>See all products</span>
-                <ul>
-                    <li>
-                        <div>
+            <section class="c-section__three">
+                <a href="#">
+                    <img class="c-arrow__left" src="./assets/section1/left-default.png" alt="Trocar produtos a Esquerda">
+                </a>
+                <a href="#">
+                    <img class="c-arrow__right" src="./assets/section1/right-default.png" alt="Trocar produtos a Esquerda">
+                </a>
+                <div class="c-customers__flex">
+                    <h3 class="c-customers__title">Customers also viewed these products</h3><a href="#" class="c-customers__cta">See all products</a>
+                </div>
+                <ul class="c-customers__item">
+                    <li class="c-customers--position">
+                        <div class="c-customers__link">
+                            <div class="c-product__cta">
+                                <span class="c-product__cta1">-0%</span>
+                                <span class="c-payment__cta">SAVE $ 0</span>
+                            </div>
                             <a><img src="./assets/section2e3/ImgProductCustomers7.png" alt="Imagem Vizio 65 polegadas"></a>
-                            <h5>VIZIO 65" Class 4K UHD Quantum SmartCast Sma...</h5>
-                            <p>$ 748.00</p>
-                            <h4>$ 548.00</h4>
-                            <p>10x $ 320,00</p>
+                            <h5 class="c-product__title">VIZIO 65" Class 4K UHD Quantum SmartCast Sma...</h5>
+                            <p class="c-product__old-price">$ 748.00</p>
+                            <h3 class="c-product__price">$ 548.00</h3>
+                            <p class="c-product__payment">10x $ 320,00</p>
                         </div>
                     </li>
                     <li>
-                        <div>
+                        <div class="c-customers__link">
                             <a><img src="./assets/section2e3/ImgProductCustomers8.png" alt="Imagem Apple Watch"></a>
-                            <h5>Apple Watch Series 5 GPS, 44mm Space Gray Alumi...</h5>
-                            <p></p>
-                            <h4>$ 449.00</h4>
-                            <p>10x $ 44,90</p>
+                            <h5 class="c-product__title">Apple Watch Series 5 GPS, 44mm Space Gray Alumi...</h5>
+                            <p class="c-product__old-price c-product--space"></p>
+                            <h3 class="c-product__price">$ 449.00</h3>
+                            <p class="c-product__payment">10x $ 44,90</p>
                         </div>
                     </li>
-                    <li>
-                        <div>
+                    <li class="c-customers--position">
+                        <div class="c-customers__link">
+                            <div class="c-product__cta">
+                                <span class="c-product__cta1">-0%</span>
+                                <span class="c-payment__cta">SAVE $ 0</span>
+                            </div>
                             <a><img src="./assets/section2e3/ImgProductCustomers9.png" alt="Imagem Pioneer"></a>
-                            <h5>The Pioneer Woman Cowboy Rustic 14-Piece...</h5>
-                            <p>$ 69.97</p>
-                            <h4>$ 59.00</h4>
-                            <p>10x $ 5,90</p>
+                            <h5 class="c-product__title">The Pioneer Woman Cowboy Rustic 14-Piece...</h5>
+                            <p class="c-product__old-price">$ 69.97</p>
+                            <h3 class="c-product__price">$ 59.00</h3>
+                            <p class="c-product__payment">10x $ 5,90</p>
                         </div>
                     </li>
                     <li>
-                        <div>
+                        <div class="c-customers__link">
                             <a><img src="./assets/section2e3/ImgProductCustomers10.png" alt="Imagem Wireless Pad"></a>
-                            <h5>onn. Wireless Charging Pad with LED Night Light</h5>
-                            <p></p>
-                            <h4>$ 12.88</h4>
-                            <p>10x $ 1,28</p>
+                            <h5 class="c-product__title">onn. Wireless Charging Pad with LED Night Light</h5>
+                            <p class="c-product__old-price c-product--space"></p>
+                            <h3 class="c-product__price">$ 12.88</h3>
+                            <p class="c-product__payment">10x $ 1,28</p>
                         </div>
                     </li>
                     <li>
-                        <div>
+                        <div class="c-customers__link">
                             <a><img src="./assets/section2e3/ImgProductCustomers11.png" alt="Imagem Office Chair"></a>
-                            <h5>Office Chair Ergonomic Desk Chair Mesh Comp...</h5>
-                            <p></p>
-                            <h4>$ 54.99</h4>
-                            <p>10x $ 320,00</p>
+                            <h5 class="c-product__title">Office Chair Ergonomic Desk Chair Mesh Comp...</h5>
+                            <p class="c-product__old-price c-product--space"></p>
+                            <h3 class="c-product__price">$ 54.99</h3>
+                            <p class="c-product__payment">10x $ 320,00</p>
                         </div>
                     </li>
                     <li>
-                        <div>
+                        <div class="c-customers__link">
                             <a><img src="./assets/section2e3/ImgProductCustomers12.png" alt="Imagem Office Chair"></a>
-                            <h5>Hershey, Halloween Assorted Candy Nuts...</h5>
-                            <p></p>
-                            <h4>$ 9.94</h4>
-                            <p>10x $ 320,00</p>
+                            <h5 class="c-product__title">Hershey, Halloween Assorted Candy Nuts...</h5>
+                            <p class="c-product__old-price c-product--space"></p>
+                            <h3 class="c-product__price">$ 9.94</h3>
+                            <p class="c-product__payment">10x $ 320,00</p>
                         </div>
                     </li>
                 </ul>
             </section>
             <section>
-                <img src="./assets/section4e5/imgDepartments.png" alt="Imagem Departamentos">
+                <img class="c-img__departaments" src="./assets/section4e5/imgDepartments.png" alt="Imagem Departamentos">
+        
+                <div class="c-espec__container">
+                    <h3 clas="c-espec__title">About this item</h3><br>
+                    <p class="c-espec__subtitle">
+                        We aim to show you accurate product information. Manufacturers, suppliers and others provide what you see here, and we have not verified it. See our disclaimer<br><br>
+                    </p>
+                    <p class="c-espec__product">
+                        iPad Air is thin, light, and powerful. It features the A12 Bionic chip with Neural Engine, which uses real-time machine learning to transform the way you experience photos, gaming, augmented reality (AR), and more. A beautiful 10.5-inch Retina display with True Tone for easier viewing in all kinds ofÂ lighting environments.1Â Support for Apple Pencil and the Smart Keyboard.Â 2Â An 8MP back camera and 7MP FaceTime HD camera. Touch ID and Apple Pay. And with all-day battery life,3Â fast Wi-Fi and Gigabit-class LTE,Â 4Â and over a million iPad apps on the App Store, iPad Air is ready for any task, anywhere.<br>
+                        <br>
+                        • 10.5-inch Retina display with True Tone and wide color1 ’’<br>
+                        • A12 Bionic chip <br>
+                        • Touch ID fingerprint sensor and Apple Pay <br>
+                        • 8MP back camera, 7MP FaceTime HD front camera <br>
+                        • Stereo speakers <br>
+                        • 802.11ac Wi-Fi and Gigabit-class LTE cellular data4 <br>
+                        • Up to 10 hours of battery life3<br>
+                        • Lightning connector for charging and accessories <br>
+                        • iOS 12 with Group FaceTime, shared augmented reality experiences, Screen Time, and more <br><br>
 
-                <h3>About this item</h3>
-                <p>
-                    We aim to show you accurate product information. Manufacturers, suppliers and others provide what you see here, and we have not verified it. See our disclaimer
-
-                    iPad Air is thin, light, and powerful. It features the A12 Bionic chip with Neural Engine, which uses real-time machine learning to transform the way you experience photos, gaming, augmented reality (AR), and more. A beautiful 10.5-inch Retina display with True Tone for easier viewing in all kinds ofÂ lighting environments.1Â Support for Apple Pencil and the Smart Keyboard.Â 2Â An 8MP back camera and 7MP FaceTime HD camera. Touch ID and Apple Pay. And with all-day battery life,3Â fast Wi-Fi and Gigabit-class LTE,Â 4Â and over a million iPad apps on the App Store, iPad Air is ready for any task, anywhere.
-
-                    • 10.5-inch Retina display with True Tone and wide color1 ’’
-                    • A12 Bionic chip 
-                    • Touch ID fingerprint sensor and Apple Pay 
-                    • 8MP back camera, 7MP FaceTime HD front camera 
-                    • Stereo speakers 
-                    • 802.11ac Wi-Fi and Gigabit-class LTE cellular data4 
-                    • Up to 10 hours of battery life3
-                    • Lightning connector for charging and accessories 
-                    • iOS 12 with Group FaceTime, shared augmented reality experiences, Screen Time, and more 
-
-                    Go to <a href="https://www.apple.com/ipad-air/specs/">apple.com/ipad-air/specs</a> for a complete set. 
-                </p>
+                        Go to <a class="c-espec__link" href="https://www.apple.com/ipad-air/specs/" target="_blanck">apple.com/ipad-air/specs</a> for a complete set. 
+                    </p>
+                </div>
             </section>
             <section>
-                <form>
-                    <label for="email">Get news & special offers!</label><input type="email" name="email" id=""><button type="submit">SUBMIT</button>
+                <form class="c-email__container">
+                    <div>
+                    <img class="c-email__img-mail" src="./assets/footer/imgEmail-newsLetter.svg">
+                    <label 
+                        class="c-email__text" for="email"
+                    >Get news & special offers!</label>
+                        <input 
+                            class="c-email__input" 
+                            type="email" 
+                            name="email" 
+                            id=""
+                            placeholder="example@email.com"
+                        >
+                            <button 
+                                class="c-email__submit" type="submit"
+                            >SUBMIT</button>
+                    </div>
                 </form>
             </section>
         </main>
-        <footer>
-            <div>
-                <div>
-                    <h6>Section name</h6>
-                    <ul>
-                        <li>
-                            <a href="#">Sitemap link</a>
-                        </li>
-                        <li>
-                            <a href="#">Sitemap link</a>
-                        </li>
-                        <li>
-                            <a href="#">Sitemap link</a>
-                        </li>
-                        <li>
-                            <a href="#">Sitemap link</a>
-                        </li>
-                        <li>
-                            <a href="#">Sitemap link</a>
-                        </li>
-                        <li>
-                            <a href="#">Sitemap link</a>
-                        </li>
-                        <li>
-                            <a href="#">Sitemap link</a>
-                        </li>
-                        <li>
-                            <a href="#">Sitemap link</a>
-                        </li>
-                        <li>
-                            <a href="#">Sitemap link</a>
-                        </li>
-                        <li>
-                            <a href="#">Sitemap link</a>
-                        </li>
-                    </ul>
+        <footer class="c-footer__container">
+            <div class="c-footer__content">
+                <div class="c-footer__box1">
+                    <h6 class="c-footer__subtitle">Section name</h6>
+                        <div class="c-footer__item">
+                            <div class="c-footer__div">
+                                <a class="c-footer__link" href="#">Sitemap link</a>
+                                <a class="c-footer__link" href="#">Sitemap link</a>
+                                <a class="c-footer__link" href="#">Sitemap link</a>
+                                <a class="c-footer__link" href="#">Sitemap link</a>
+                                <a class="c-footer__link" href="#">Sitemap link</a>
+                                <a class="c-footer__link" href="#">Sitemap link</a>
+                            </div>
+                            <div class="c-footer__div2">
+                                <a class="c-footer__link" href="#">Sitemap link</a>
+                                <a class="c-footer__link" href="#">Sitemap link</a>
+                                <a class="c-footer__link" href="#">Sitemap link</a>
+                                <a class="c-footer__link" href="#">Sitemap link</a>
+                            </div>
+                        </div>
                 </div>
-                <div>
-                    <h6>Section name</h6>
-                    <ul>
-                        <li>
-                            <a href="#">Sitemap link</a>
-                        </li>
-                        <li>
-                            <a href="#">Sitemap link</a>
-                        </li>
-                        <li>
-                            <a href="#">Sitemap link</a>
-                        </li>
-                        <li>
-                            <a href="#">Sitemap link</a>
-                        </li>
-                        <li>
-                            <a href="#">Sitemap link</a>
-                        </li>
-                        <li>
-                            <a href="#">Sitemap link</a>
-                        </li>
-                        <li>
-                            <a href="#">Sitemap link</a>
-                        </li>
-                        <li>
-                            <a href="#">Sitemap link</a>
-                        </li>
-                        <li>
-                            <a href="#">Sitemap link</a>
-                        </li>
-                        <li>
-                            <a href="#">Sitemap link</a>
-                        </li>
-                    </ul>
+                <div class="c-footer__box2">
+                    <h6 class="c-footer__subtitle">Section name</h6>
+                    <div class="c-footer__item">
+                        <div class="c-footer__div">
+                            <a class="c-footer__link" href="#">Sitemap link</a>
+                            <a class="c-footer__link" href="#">Sitemap link</a>
+                            <a class="c-footer__link" href="#">Sitemap link</a>
+                            <a class="c-footer__link" href="#">Sitemap link</a>
+                            <a class="c-footer__link" href="#">Sitemap link</a>
+                            <a class="c-footer__link" href="#">Sitemap link</a>
+                        </div>
+                        <div class="c-footer__div">
+                            <a class="c-footer__link" href="#">Sitemap link</a>
+                            <a class="c-footer__link" href="#">Sitemap link</a>
+                            <a class="c-footer__link" href="#">Sitemap link</a>
+                            <a class="c-footer__link" href="#">Sitemap link</a>
+                        </div>
+                    </div>
                 </div>
                 <div>
                     <button>CALL US</button>
