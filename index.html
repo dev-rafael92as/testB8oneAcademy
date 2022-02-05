@@ -79,13 +79,13 @@
                                 <p class="c-card__ref">Ref: 000000</p><a class="c-card__cta">read full description</a></span>
                             </div>    
                         </div>
-                        <div class="c-card__especify-container">
+                        <div>
                             <div class="c-card__subcontainer">
                                 <p class="c-color__title"><strong>Color:</strong> Space Gray</p>
-                                <div class="c-color__container"></div>    
-                                    <button class="c-color__item" name="Color1" id="color1"><img src="./assets/section1/colorProduct1-section.png"></button>
-                                    <button class="c-color__item" name="Color2" id="color2"><img src="./assets/section1/colorProduct2-section.png"></button>
-                                    <button class="c-color__item" name="Color3" id="color3"><img src="./assets/section1/colorProduct3-section.png"></button>
+                                <div></div>    
+                                    <button class="c-color__item" name="Color1" id="color1"><img class="c-color__img" src="./assets/section1/colorProduct1-section.png"></button>
+                                    <button class="c-color__item" name="Color2" id="color2"><img class="c-color__img" src="./assets/section1/colorProduct2-section.png"></button>
+                                    <button class="c-color__item" name="Color3" id="color3"><img class="c-color__img" src="./assets/section1/colorProduct3-section.png"></button>
                                 </div>
                                 <div>
                                 <p class="c-size__title"><strong>Screen Size:</strong></p>
@@ -111,11 +111,11 @@
                             </div>
                             <div class="c-cart__container">
                                 <div>
-                                    <input class="c-cart__amount" type="text" name="numberOfProduct" value="2" id="">
-                                    <button class="c-button__plus-count">
+                                    <input class="c-cart__amount" id="setQtdProduto" type="text" name="numberOfProduct" value="1"  min="1">
+                                    <button class="c-button__plus-count" type='button' onclick="alteraQtdProduto('down')">
                                         <img src="./assets/section1/imgDeductCounter.svg" alt="Botão reduzir Quantidade">
                                     </button>
-                                    <button class="c-button__deduct-count">
+                                    <button type='button' class="c-button__deduct-count" onclick="alteraQtdProduto('up')">
                                         <img src="./assets/section1/imgPlusCount.svg" alt="Botão aumentar Quantidade">
                                     </button>
                                 </div>
@@ -125,7 +125,7 @@
                                 </div>
                             </div>
                             <div class="c-button__cart">
-                                <button class="c-cart__add c-cart--espc" type="submit">add to cart</button>
+                                <button type="button" class="c-cart__add c-cart--espc" onclick="alteraQtdCart()">add to cart</button>
                                 <button class="c-cart__buy c-cart--espc" type="submit">buy now</button>
                                 <p class="c-cart__shipped">Shipped by <strong>Store 1</strong> Sold by <strong>Store 2</strong></p>
                             </div>
@@ -371,22 +371,26 @@
                         </div>
                     </div>
                 </div>
-                <div>
-                    <button>CALL US</button>
-                    <button>SEND A MESSAGE</button>
-                    <p>Click here to see our opening hours</p>
+                <div class="c-footer__container2">
+                    <button class="c-footer__cta">CALL US</button>
+                    <img class="c-img__phone-cta" src="./assets/footer/ImgPhoneContact.svg" alt="">
+                    <button class="c-footer__cta-send">SEND A MESSAGE</button>
+                    <img class="c-img__mail-cta" src="./assets/footer/imgEmail-newsLetter1.svg" alt="">
+                    <a href="#" class="c-footer__cta-link">Click here to see our opening hours</a>
                 </div>
             </div>
-                <hr>
-            <div>
-                <img src="./assets/footer/ImgPayment.png" alt="Bandeiras Cartões">
-                <img src="./assets/footer/ImgSocial.png" alt="Redes Sociais">
-
-                <p>2020 @ All Right Reserved to b8one</p>
-                <p>Amet minim mollit non deserunt ullamco est sit aliqua do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt amet.</p>
+                <hr class="c-footer__hr">
+            <div class="c-footer__contact">
+                <img class="c-footer__pay" src="./assets/footer/ImgPayment.png" alt="Bandeiras Cartões">
+                <img class="c-footer__social" src="./assets/footer/ImgSocial.png" alt="Redes Sociais">
+            </div>
+            <div class="c-footer__end">
+                <p class="c-footer__subtitle">2020 @ All Right Reserved to b8one</p>
+                <p class="c-footer__text">Amet minim mollit non deserunt ullamco est sit aliqua do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt amet.</p>        
                 <img src="./assets/footer/ImgVtex.png" alt="Vtex">
                 <img src="./assets/footer/ImgB8one.png" alt="B8one">
             </div>
         </footer>
+        <script src="./script.js"></script>
     </body>
 </html>

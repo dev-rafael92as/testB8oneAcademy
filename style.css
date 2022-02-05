@@ -148,10 +148,16 @@ button {
 }
 
 .c-nav__item {
+    width: 1440px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 32px;
+}
+
+.c-color__img {
+    border-radius: 50%;
+    border: 1px solid #ccc;
 }
 
 .c-nav__link {
@@ -200,7 +206,7 @@ button {
 /* Estilização Descrição Produto */
 
 .c-form__container {
-
+    size: 100%
 }
 
 .c-card__subtitle {
@@ -239,18 +245,8 @@ button {
     line-height: 16px;
 }
 
-.c-card__especify-container {
-    
-    
-
-}
-
 .c-card__subcontainer {
     margin-top: 40px;
-}
-
-.c-color__container {
-    
 }
 
 .c-color__title {
@@ -339,6 +335,7 @@ button {
     line-height: 20px;
     color:var(--neutral-medium);
     margin-left: 24px;
+    text-decoration-line: line-through;
 }
 
 .c-payment__container {
@@ -631,7 +628,7 @@ button {
 }
 
 .c-email__input {
-    width: 561px;
+    width: 496px;
     font-weight: var(--font-medium);
     font-size: var(--large-paragraph);
     line-height: 20px;
@@ -657,12 +654,12 @@ button {
 .c-footer__container {
     height: 634px;
     background: var(--neutral-darkest);
-    max-width: 1440px;
+    width: 1375px;
+    margin: auto;
 }
 
 .c-footer__content {
     display: flex;
-    
     gap: 100px;
 }
 
@@ -702,4 +699,97 @@ button {
     font-weight: var(--font-medium);
     line-height: 20px;
     margin-bottom: 14px;
+}
+
+.c-footer__container2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+    text-align: center;
+}
+
+.c-footer__cta {
+    margin-top: 90px;
+    margin-bottom: 16px;
+    font-size: var(--font-regular);
+    font-weight: var(--font-large);
+    padding: 12px 0;
+    width: 300px;
+    color: var(--neutral-white);
+    background-color:var(--green-dark);
+    border: none;
+    border-radius: 4px;
+}
+
+.c-footer__cta-send {
+    padding: 12px;
+    font-size: var(--font-regular);
+    font-weight: var(--font-large);
+    color: var(--neutral-white);
+    background-color: var(--orange-medium);
+    border-radius: 4px;
+    border: none;
+}
+
+.c-img__phone-cta {
+    width: 18px;
+    height: 18px;
+    color: var(--neutral-white);
+    position: relative;
+    bottom: 47px;
+    left: 90px;
+}
+
+.c-img__mail-cta {
+    width: 19.5px;
+    height: 16.5px;
+    color: var(--neutral-white);
+    position: relative;
+    bottom: 30px;
+    left: 55px;
+}
+
+.c-footer__cta-link {
+    font-size: var(--font-regular);
+    font-weight: var(--font-medium);
+    color: var(--neutral-white);
+}
+
+.c-footer__hr {
+    display: inline-block;
+    width: 1376px;
+    border: 1px solid var(--neutral-dark);
+}
+
+.c-footer__contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    height: 120px;
+    text-align: center;
+}
+
+.c-footer__pay {
+    justify-self: start;
+    margin-right: 32px;
+}
+
+.c-footer__end {
+    text-align: center;
+}
+
+.c-footer__subtitle {
+    font-size: var(--small-paragraph);
+    font-weight: var(--font-semibold);
+    color: var(--neutral-white);
+}
+
+.c-footer__text {
+    font-size: var(--small-paragraph);
+    font-weight: var(--font-regular);
+    color: var(--neutral-light);
+    max-width: 1028px;
+    margin: auto;
+    margin-bottom: 32px;
 }
